@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(''); ?>/assets/css/template.css" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(''); ?>/assets/css/template-responsive.css" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(''); ?>/assets/css/flickerplate.css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
     
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
