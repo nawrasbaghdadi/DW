@@ -729,8 +729,115 @@ background: url(assets/img/arrow-down.png) center no-repeat;
 }
 .span3:hover .fa-5x{
 color: #faa529;
-
 }
+.allservices{
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  position: relative;
+   -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.expand{
+  height:435px;
+}
+.allcont{
+  height: auto;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  position: absolute;;
+  top:0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.acc{
+  z-index: 1;
+  opacity: 1;
+}
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+.introducing > .block{
+  cursor: pointer;
+}
+.allcont > p,
+.tab > p{
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  line-height: 1.5em;
+  text-align: left;
+}
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links{
+      margin:0;
+    }
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;
+        width: 24%;
+        background: #f1f1f1;
+        margin-bottom: 5px;
+      }
+ 
+        .tab-links a {
+            padding:9px 15px;
+            display:inline-block;
+            background:#f1f1f1;
+            font-size:16px;
+            font-weight:600;
+            color:#333;
+            transition:all linear 0.15s;
+            width: 88%;
+        }
+ 
+        .tab-links a:hover {
+            background:#e54e19;
+            text-decoration:none;
+            color: #fff;
+        }
+ 
+    li.active a, li.active a:hover {
+        background:#e54e19;
+        color:#fff;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }
 /********/
 @media (max-width: 1280px) {
   body,

@@ -112,6 +112,45 @@ jQuery(function($){
 			$(this).find('.img_wrapper .img_grayscale').stop().animate({opacity:0},200);
 		}
 	)
+
+	///Nawras////
+	$('.introducing > .block').click(function() {
+		 $(this).parent().find('.span3').removeClass('active');
+     	 $(this).addClass('active');
+     	 var currentID=$(this).attr('id');
+     	 $('.allservices').addClass('expand');
+   	$('#'+currentID+'_cont').parent().find('.allcont').removeClass('acc');
+    $('#'+currentID+'_cont').toggleClass('acc');
+    return false;
+  });
+
+	$('#brand').click(function() {
+    $('.brand_cont').toggle('slow');
+    return false;
+  });
+	$('#event').click(function() {
+    $('.event_cont').toggle('slow');
+    return false;
+  });
+	$('#media').click(function() {
+    $('.media_cont').toggle('slow');
+    return false;
+  });
+
+    $('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = $(this).attr('href');
+ 
+        // Show/Hide Tabs
+        $('.tabs ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+
+
+
 });
 
 /**
